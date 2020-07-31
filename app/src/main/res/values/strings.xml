@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Flayer</string>
+    <string name="app_name" translatable="false">Flayer</string>
+    <string name="browse">browse</string>
+    <string name="your_music">your music</string>
+    <string name="discover">discover</string>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>
