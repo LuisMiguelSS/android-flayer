@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FlayerThemeDark" parent="@style/Theme.AppCompat">
+        <item name="android:windowTitleBackgroundStyle">@color/flayer_lightDark</item>
+        <item name="android:statusBarColor">@color/flayer_lightDark</item>
+    </style>
+</resources>
