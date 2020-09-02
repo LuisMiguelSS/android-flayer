@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainScreen">
+
+    <!-- Top Tabbed Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/flayer_dark">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabbedNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:tabIndicatorColor="@color/flayer_accent"
+            app:tabSelectedTextColor="@color/flayer_accent"
+            app:tabRippleColor="@color/flayer_lightDark"
+            app:tabTextColor="@color/flayer_whiteNormal">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/nav_tab_browse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/browse"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/nav_tab_yourMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_music"/>
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/nav_tab_discover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/discover"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Container for the different Fragments -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragmentsContainer"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
